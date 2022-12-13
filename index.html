@@ -1,0 +1,505 @@
+<!-- <!DOCTYPE HTML> -->
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<title>zetinal</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/uikit.min.css" media="all" />
+	<link rel="stylesheet" href="css/slicknav.css" />
+	<link rel="stylesheet" type="text/css" href="css/components/search.min.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
+	 
+
+</head>
+<body>
+
+<header class="header-area">
+    <div class="header-main-menu">
+        <div class="center">
+            <div class="uk-grid">
+                <div class="uk-width-1-4"><!--  logo area  -->
+                    <div class="logo">
+                        <img src="images/logo.png" alt="">
+                    </div>
+					<div class="responsive-logo">
+                        <img src="images/logo-mobile.png" alt="">
+                    </div>
+                </div> <!-- logo area end  -->
+                <div class="uk-width-3-4"> <!-- top-menu start -->
+                    <nav class="main-menu"> <!-- desktop view -->
+                        <ul class="uk-hidden-small">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Sign in / Sign up</a></li>
+                            <li class="button"><a data-uk-modal="{}" href="#submit-modal">+ SUBMIT</a></li>
+                        </ul>
+						<a href="#offcanvas-1" class="uk-navbar-toggle uk-visible-small uk-float-right responsive-bar" data-uk-offcanvas=""></a>
+                    </nav> <!-- desktop-view end-->
+					<div id="offcanvas-1" class="uk-offcanvas"> <!-- responsive view start-->
+							<div class="uk-offcanvas-bar uk-offcanvas-bar-show uk-offcanvas-bar-flip">
+								<ul class="uk-nav uk-nav-offcanvas uk-nav-parent-icon slide-menu" data-uk-nav="">
+								        <li><a href="">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Sign in / Sign up</a></li>
+									   <li class="button"><a data-uk-modal="{}" href="#submit-modal">+ SUBMIT</a></li>
+								</ul>
+                            </div>
+                    </div> <!-- responsive view end-->
+                </div> <!-- top-menu-end -->
+            </div> 
+        </div> 
+        </div>
+    </div>
+</header>
+<!-- this is modal post start -->
+
+					<div id="submit-modal" class="uk-modal">
+						<div class="uk-modal-dialog modal-cent">
+						<nav class="pop-up-menu" >
+						   <ul class="uk-subnav uk-subnav-pill modal-menu">
+									<li class="news-hover">
+										<img class="new" style="display:block;margin:auto;" src="images/post-type/news-01-01-01.png" alt="" />
+										<a class="subbar-news" href="#" >News</a>
+									</li>
+									<li>
+										<img style="display:block;margin:auto;" src="images/post-type/alert-01-01.png" alt="" />
+										<a class="subbar-alert" href="#" >Alert</a>
+									</li>
+									<li>
+										<img style="display:block;margin:auto;" src="images/post-type/opinion-01-01.png" alt="" />
+										<a class="subbar-opinion" href="#" >Opinion</a>
+									</li>
+									<li>
+										<img style="display:block;margin:auto;" src="images/post-type/like-01.png" alt="" />
+										<a class="subbar-like" href="#" >Like</a>
+									</li>
+									<li>
+										<img style="display:block;margin:auto;" src="images/post-type/complaint-01.png" alt="" />
+										<a class="subbar-complaint" href="#" >Complaint</a>
+									</li>
+									<li>
+										<img style="display:block;margin:auto;" src="images/post-type/question-01.png" alt="" />
+										<a class="subbar-question" href="#">Question</a>
+									</li>
+								</ul>
+						</nav>
+							<div class="pop-up-text-area">
+								<textarea name="" id="heading" placeholder="Headline" ></textarea>
+							</div>
+							<div class="attach">
+							    <ul class="post-attach hides">
+							        <li class="link-click">
+                                        <a class="link-appear" href="#">
+                                            <img class="attach-icon" src="images/post-elements/link_unfocus-01.png" alt=""/>
+                                            <img class="attach-icon" src="images/post-elements/link_hover.png" alt=""/>
+                                            <span class="attach-link">Link</span>
+                                        </a>
+                                    </li>
+											
+							        <li><a href="#" class="text-appear">
+                                            <img class="attach-icon" src="images/post-elements/text-unfocus-01.png" alt=""/>
+                                            <img class="attach-icon" src="images/post-elements/text-hover.png" alt=""/>
+                                            <span class="attach-link">Text</span>
+                                        </a>
+                                    </li>
+							        <li>
+                                        <a style="text-decoration: none;" href="#">
+                                            <img class="attach-icon" src="images/post-elements/photo_unfocus-01_renamed.png" alt=""/>
+                                            <img class="attach-icon" src="images/post-elements/photo_hover_renamed.png" alt=""/>
+                                            <span class="attach-link">Photo</span>
+                                        </a>
+                                    </li>
+							    </ul>
+								
+								<div class="link-input">
+									<label for="">Attach:</label>
+									<input type="text" placeholder="Enter or paste a link"/><i class="uk-icon-close closed"></i>
+								</div>
+								
+								<div class="text-input">
+									<label for="">Text:</label>
+									<input type="text" placeholder="Enter your text here"/><i class="uk-icon-close closed"></i>
+								</div>
+							</div>
+											
+							<div class="button-area">
+							    <ul>
+							        <li><a href="#">Not sure? Read a guideline here!</a></li>
+							        <li><a href="#">Cancel</a></li>
+							        <li><a href="#">Share</a></li>
+							    </ul>
+							</div>
+						</div>
+					</div>
+
+<!-- this is modal post end -->
+
+<section class="header-sub-bar">
+       <div class="center-area-sub">
+        
+            <div class="uk-grid">
+                <div class="uk-width-large-3-10 .uk-width-medium-1-5 .uk-width-small-4-10">
+                    <nav class="subbar-dropdown">
+                        <ul class="drop-hover">
+                            <li>
+							
+								<div class="uk-button-dropdown" data-uk-dropdown="{mode:'click'}">
+                                    <a href="#">Top Today <i class="uk-icon-caret-down"></i></a>
+                                    <div style="" class="uk-dropdown top-today">
+                                        <ul class="uk-nav uk-nav-dropdown">
+                                          <li class=""><a href="#">New</a></li>
+											
+											<li class="uk-nav-divider"></li>
+                                            
+                                            <li><a href="#">Top Today</a></li>
+                                            <li><a href="#">Top Yesterday</a></li>
+                                            <li><a href="#">Top This Week</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+							</li>
+                            <li>
+								<div class="uk-button-dropdown" data-uk-dropdown="{mode:'click'}">
+                                    <a href="#">Melbourne <i class="uk-icon-caret-down"></i></a>
+                                    <div style="" class="uk-dropdown melbourne">
+                                        <ul class="uk-nav uk-nav-dropdown">
+                                            <li class="uk-nav-header">
+												<form class="uk-search search-icon" data-uk-search>
+													<input class="uk-search-field" type="search" placeholder="Search City or Country">
+												</form>
+											</li>
+                                            <div class="my-area">
+												<li class="uk-nav-header">My Area</li>
+												<li><a class="area-padding" href="#">Melbourne</a></li>
+												<li><a class="area-padding" href="#">Australia</a></li>
+												<li><a class="area-padding" href="#">Whole World</a></li>
+											</div>
+                                            <div class="recent-search">
+												<li class="uk-nav-header">Recent Search</li>
+												<li><a class="area-padding" href="#">Newyork</a></li>
+												<li><a class="area-padding" href="#">London</a></li>
+											</div>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+							</li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="uk-width-large-7-10 .uk-width-medium-4-5 .uk-width-small-6-10">
+					
+                    <nav class="sub-bar-menu" >
+                        <ul id="filter" class="uk-subnav uk-subnav-pill response-menu">
+                            <li><a class="subbar-all" href="#" data-uk-filter="">All</a></li>
+                            <li><a class="subbar-news" href="#" data-uk-filter="news">News</a></li>
+                            <li><a class="subbar-alert" href="#" data-uk-filter="alert">Alert</a></li>
+                            <li><a class="subbar-opinion" href="#" data-uk-filter="opinion">Opinion</a></li>
+                            <li><a class="subbar-like" href="#" data-uk-filter="like">Like</a></li>
+                            <li><a class="subbar-complaint" href="#" data-uk-filter="complaint">Complaint</a></li>
+                            <li><a class="subbar-question" href="#" data-uk-filter="question">Question</a></li>
+                        </ul>
+                    </nav>
+				
+                </div>
+            </div> 
+        </div>
+        
+    </section>
+   
+        
+    <div class="center-area">
+        <div class="" data-uk-grid="{gutter: 20, controls: '#filter'}" style="position: relative; margin-left: -20px; height: 394px;">
+        
+		<!-- alert post  -->
+        <div class="uk-width-large-1-2 uk-width-medium-1-2" data-uk-filter="alert" data-grid-prepared="true" style="position: absolute; box-sizing: border-box; padding-left: 20px; padding-bottom: 20px; top: 0px; left: 0px;">
+			<div class="post uk-panel-box wid"> 
+				
+					<img class="symbol-img" src="images/post-type/alert-01-01.png" alt=""/><span class="alert-color">Alert</span>
+					<h2><a href="post-screen.html">A2 Warning! There is a car accident near the central hospital. Many people are injured, avoid this area if possible.</a></h2>
+					<h6>Tyler &bull; 5m &bull; Melbourne</h6>
+				
+					<img src="images/demo.jpg" alt="">
+                
+					<ul class="comment">
+						<li>
+							<a href="post-screen.html">
+								<img class="unfocus-count" src="images/post-elements/Up-unfocus.png" alt=""/>
+								<img class="unfocus-count" src="images/post-elements/Up-hover-focus.png" alt=""/>
+								<span class="comment-color">30</span>
+							</a>
+						</li>
+						
+						<li>
+							<a href="post-screen.html">
+								<img class="unfocus-comment" src="images/post-elements/Comment-unfocus-01.png" alt=""/>
+								<img class="unfocus-comment" src="images/post-elements/Comment-hover.png" alt=""/>
+								<span class="comment-color">11</span>
+							</a>
+						</li>
+						
+						<li style="float:right">
+							<a href="#">
+								<img class="dot" src="images/post-elements/More-3dots.png" alt=""/>
+								<img class="dot" src="images/post-elements/More-hover.png" alt=""/>
+							</a>
+						</li>
+					</ul>
+				
+			</div>
+		</div>
+		
+		<!-- alert post  -->
+		
+		<!-- opinion post -->
+         <div class="uk-width-large-1-2 uk-width-medium-1-2" data-uk-filter="opinion" data-grid-prepared="true" style="position: absolute; box-sizing: border-box; padding-left: 20px; padding-bottom: 20px; top: 0px; left: 210.6875px;">
+								
+			<div class="post uk-panel-box wid"> 
+				<img class="symbol-img" src="images/post-type/opinion-01-01.png" alt=""><span class="opinion-color">Opinion</span> 
+				<h2><a href="post-screen.html">Birdman should've won atleast one oscar this year, what an awesome movie!</a></h2>
+				<h6>faithcoder1 &bull; 5m &bull; Melbourne</h6>
+				<div class="media border-hr">
+                    
+                    <div class="media-body">
+                           
+                            <h4 class="media-heading">Hye I am Faithcoder1</h4>
+                            <p>http://www.fiverr.com/faithcoder1</p>
+                    </div>
+			    </div>
+									
+				<ul class="comment">					
+					<li>
+							<a href="post-screen.html">
+								<img class="unfocus-count" src="images/post-elements/Up-unfocus.png" alt=""/>
+								<img class="unfocus-count" src="images/post-elements/Up-hover-focus.png" alt=""/>
+								<span class="comment-color">30</span>
+							</a>
+						</li>
+						
+						<li>
+							<a href="post-screen.html">
+								<img class="unfocus-comment" src="images/post-elements/Comment-unfocus-01.png" alt=""/>
+								<img class="unfocus-comment" src="images/post-elements/Comment-hover.png" alt=""/>
+								<span class="comment-color">11</span>
+							</a>
+						</li>
+						
+						<li style="float:right">
+							<a href="#">
+								<img class="dot" src="images/post-elements/More-3dots.png" alt=""/>
+								<img class="dot" src="images/post-elements/More-hover.png" alt=""/>
+							</a>
+						</li>
+				</ul> 
+            </div>
+            </div>
+            <!-- opinion post  -->
+			
+			<!-- like post  -->
+            <div class="uk-width-large-1-2 uk-width-medium-1-2" data-uk-filter="like" data-grid-prepared="true" style="position: absolute; box-sizing: border-box; padding-left: 20px; padding-bottom: 20px; top: 0px; left: 210.6875px;">
+								
+			<div class="post uk-panel-box wid"> 
+				<img class="symbol-img" src="images/post-type/like-01.png" alt=""><span class="like-color">Like</span> 
+				<h2><a href="post-screen.html">Birdman should've won atleast one oscar this year, what an awesome movie!</a></h2>
+				<h6>
+				faithcoder1 &bull; 5m &bull; Melbourne
+				
+				</h6>
+				<div class="media border-hr">
+					<div class="media-left">
+						<a href="#"><img class="media-object" src="images/demo.jpg" alt="..."></a>
+					</div>
+					<div class="media-body">
+						<h4 class="media-heading">Lorem Ipsum is simply dummy text</h4>
+						<p>https://www.google.com.au/?gfe_rd=cr&ei=n0jtVIm-JLDu8we6u4L4Aw</p>
+					</div>
+				</div>
+									
+				<ul class="comment">
+					<li>
+							<a href="post-screen.html">
+								<img class="unfocus-count" src="images/post-elements/Up-unfocus.png" alt=""/>
+								<img class="unfocus-count" src="images/post-elements/Up-hover-focus.png" alt=""/>
+								<span class="comment-color">30</span>
+							</a>
+						</li>
+						
+						<li>
+							<a href="post-screen.html">
+								<img class="unfocus-comment" src="images/post-elements/Comment-unfocus-01.png" alt=""/>
+								<img class="unfocus-comment" src="images/post-elements/Comment-hover.png" alt=""/>
+								<span class="comment-color">11</span>
+							</a>
+						</li>
+						
+						<li style="float:right">
+							<a href="#">
+								<img class="dot" src="images/post-elements/More-3dots.png" alt=""/>
+								<img class="dot" src="images/post-elements/More-hover.png" alt=""/>
+							</a>
+						</li>
+				</ul> 
+			</div>
+        </div>
+        <!-- like post  -->
+		
+		<!-- complaint -->
+        <div class="uk-width-large-1-2 uk-width-medium-1-2" data-uk-filter="complaint" data-grid-prepared="true" style="position: absolute; box-sizing: border-box; padding-left: 20px; padding-bottom: 20px; top: 0px; left: 210.6875px;">
+								
+	    <div class="post uk-panel-box wid"> 
+		    <img class="symbol-img" src="images/post-type/complaint-01.png" alt=""><span class="complaint-color">Complaint</span> 
+		    <h2><a href="post-screen.html">Birdman should've won atleast one oscar this year, what an awesome movie!</a></h2>
+		    <h6>faithcoder1 &bull; 5m &bull; Melbourne</h6>
+		    
+									
+		    <ul class="comment">
+					<li>
+							<a href="#">
+								<img class="unfocus-count" src="images/post-elements/Up-unfocus.png" alt=""/>
+								<img class="unfocus-count" src="images/post-elements/Up-hover-focus.png" alt=""/>
+								<span class="comment-color">30</span>
+							</a>
+						</li>
+						
+						<li>
+							<a href="#">
+								<img class="unfocus-comment" src="images/post-elements/Comment-unfocus-01.png" alt=""/>
+								<img class="unfocus-comment" src="images/post-elements/Comment-hover.png" alt=""/>
+								<span class="comment-color">11</span>
+							</a>
+						</li>
+						
+						<li style="float:right">
+							<a href="#">
+								<img class="dot" src="images/post-elements/More-3dots.png" alt=""/>
+								<img class="dot" src="images/post-elements/More-hover.png" alt=""/>
+							</a>
+					</li>
+		    </ul> 
+	    </div>
+	    </div>
+		<!-- complaint -->						
+								
+		<!-- question -->				
+        <div class="uk-width-large-1-2 uk-width-medium-1-2" data-uk-filter="question" data-grid-prepared="true" style="position: absolute; box-sizing: border-box; padding-left: 20px; padding-bottom: 20px; top: 0px; left: 421.375px;">
+			<div class="post uk-panel-box wid"> 
+				
+					<img class="symbol-img" src="images/post-type/question-01.png" alt=""><span class="question-color">Question</span>
+					<h2><a href="post-screen.html">A3 Warning? There is a car accident near the central hospital ? Many people are injured, avoid this area if possible.</a></h2>
+					<h6>Tyler &bull; 5m &bull; Melbourne</h6>
+				
+                <img src="images/demo.jpg" alt="">
+                
+					<ul class="comment">
+						<li>
+							<a href="#">
+								<img class="unfocus-count" src="images/post-elements/Up-unfocus.png" alt=""/>
+								<img class="unfocus-count" src="images/post-elements/Up-hover-focus.png" alt=""/>
+								<span class="comment-color">30</span>
+							</a>
+						</li>
+						
+						<li>
+							<a href="#">
+								<img class="unfocus-comment" src="images/post-elements/Comment-unfocus-01.png" alt=""/>
+								<img class="unfocus-comment" src="images/post-elements/Comment-hover.png" alt=""/>
+								<span class="comment-color">11</span>
+							</a>
+						</li>
+						
+						<li style="float:right">
+							<a href="#">
+								<img class="dot" src="images/post-elements/More-3dots.png" alt=""/>
+								<img class="dot" src="images/post-elements/More-hover.png" alt=""/>
+							</a>
+						</li>
+					</ul>
+				
+			</div>
+								
+        </div>
+        <!-- question -->
+		
+		<!-- news -->
+        <div class="uk-width-large-1-2 uk-width-medium-1-2" data-uk-filter="news" data-grid-prepared="true" style="position: absolute; box-sizing: border-box; padding-left: 20px; padding-bottom: 20px; top: 0px; left: 421.375px;">
+				<div class="post uk-panel-box wid"> 
+                        <img class="symbol-img" src="images/post-type/news-01-01-01.png" alt=""><span class="news-color">News</span>
+				        <h2><a href="post-screen.html">Birdman should've won atleast one oscar this year, what an awesome movie!</a></h2>
+						<h6>Tyler &bull; 5m &bull; Melbourne</h6>
+						<p class="border-hr">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+						<ul class="comment">
+							<li>
+							<a href="#">
+								<img class="unfocus-count" src="images/post-elements/Up-unfocus.png" alt=""/>
+								<img class="unfocus-count" src="images/post-elements/Up-hover-focus.png" alt=""/>
+								<span class="comment-color">30</span>
+							</a>
+						</li>
+						
+						<li>
+							<a href="#">
+								<img class="unfocus-comment" src="images/post-elements/Comment-unfocus-01.png" alt=""/>
+								<img class="unfocus-comment" src="images/post-elements/Comment-hover.png" alt=""/>
+								<span class="comment-color">11</span>
+							</a>
+						</li>
+						
+						<li style="float:right">
+							<a href="#">
+								<img class="dot" src="images/post-elements/More-3dots.png" alt=""/>
+								<img class="dot" src="images/post-elements/More-hover.png" alt=""/>
+							</a>
+						</li>
+						</ul>
+						
+				</div>				
+        </div>
+		<!-- news -->
+						
+        </div>
+    </div>
+</div>
+</div>
+
+
+<script type="text/javascript" src="js/jquery.js" ></script>
+<script type="text/javascript" src="js/mordenizr.js" ></script>
+<script type="text/javascript" src="js/uikit.min.js" ></script>
+<script type="text/javascript" src="js/grid.min.js" ></script>
+<script src="js/jquery.slicknav.js"></script>
+<script type="text/javascript">
+
+	$(function(){
+		$('.response-menu').slicknav();
+	});
+	$(document).ready(function(){
+		$('.link-appear').click(function(){
+			$('.post-attach').fadeOut(100, function(){
+				$('.link-input').css("display", "block");
+			});
+		});
+		$('.closed').click(function(){
+			$('.link-input').fadeOut(-3000, function(){
+				$('.post-attach').fadeIn();
+			});
+		});
+		
+		
+		$('.text-appear').click(function(){
+			$('.post-attach').fadeOut(100, function(){
+				$('.text-input').css("display", "inline-block");
+			});
+		});
+		$('.closed').click(function(){
+			$('.text-input').fadeOut(-3000, function(){
+				$('.post-attach').fadeIn();
+			});
+		});
+	});
+
+</script>
+</body>
+</html>
